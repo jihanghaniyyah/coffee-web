@@ -16,7 +16,7 @@ const Navbar = () => {
 	};
 
 	return (
-		<div>
+		<div className='fixed w-full z-10'>
 			<div>
 				<div className='flex flex-row justify-between p-5 lg:px-32 px-5 bg-gradient-to-r from-backgroundColor to-brightColor shadow-[0_3px_10px_rgb(0,0,0,0.2)]'>
 					<div className='flex flex-row items-center cursor-pointer gap-2'>
@@ -99,6 +99,7 @@ const Navbar = () => {
 						smooth={true}
 						duration={500}
 						className='group relative inline-block cursor-pointer hover:text-brightColor'
+						onClick={closeMenu}
 					>
 						Home
 						<span className='absolute inset-x-0 bottom-0 h-0.5 bg-black transform scale-x-0 origin-left transition-transform group-hover:scale-x-100' />
@@ -109,6 +110,7 @@ const Navbar = () => {
 						smooth={true}
 						duration={500}
 						className='group relative inline-block cursor-pointer hover:text-brightColor'
+						onClick={closeMenu}
 					>
 						Menu
 						<span className='absolute inset-x-0 bottom-0 h-0.5 bg-black transform scale-x-0 origin-left transition-transform group-hover:scale-x-100' />
@@ -119,6 +121,7 @@ const Navbar = () => {
 						smooth={true}
 						duration={500}
 						className='group relative inline-block cursor-pointer hover:text-brightColor'
+						onClick={closeMenu}
 					>
 						About Us
 						<span className='absolute inset-x-0 bottom-0 h-0.5 bg-black transform scale-x-0 origin-left transition-transform group-hover:scale-x-100' />
@@ -129,6 +132,7 @@ const Navbar = () => {
 						smooth={true}
 						duration={500}
 						className='group relative inline-block cursor-pointer hover:text-brightColor'
+						onClick={closeMenu}
 					>
 						Products
 						<span className='absolute inset-x-0 bottom-0 h-0.5 bg-black transform scale-x-0 origin-left transition-transform group-hover:scale-x-100' />
@@ -139,10 +143,12 @@ const Navbar = () => {
 						smooth={true}
 						duration={500}
 						className='group relative inline-block cursor-pointer hover:text-brightColor'
+						onClick={closeMenu}
 					>
 						Reviews
 						<span className='absolute inset-x-0 bottom-0 h-0.5 bg-black transform scale-x-0 origin-left transition-transform group-hover:scale-x-100' />
 					</Link>
+					<Button title='Login' />
 				</div>
 			</div>
 		</div>
